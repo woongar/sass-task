@@ -1,0 +1,55 @@
+
+@use 'footerAndHeader.scss';
+
+$color1:  darkkhaki;
+$color2: white;
+$font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+body {
+    font-family: $font;
+    color: $color2;
+}
+
+.container {
+    width: 400px;
+    background-color: $color1;
+    margin: auto;
+}
+
+.form {
+    margin: 5px;
+}
+
+@mixin backColor($bgcolor: green) {
+    background-color: $bgcolor;
+    text-align: center;
+    height: 50px;
+    p {
+        padding: 15px;
+    }
+}
+
+.sucsses {
+    @include backColor()
+    }
+
+
+.error {
+    @include backColor($bgcolor: red)
+}
+
+.input1 {
+    margin-left: 25px;
+}
+
+.input2 {
+    margin-left: 27px;
+}
+
+.input3 {
+    margin-left: 7px;
+}
+
+.input4 {
+    margin-left: 60px;
+}
